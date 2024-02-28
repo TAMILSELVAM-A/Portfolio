@@ -1,7 +1,64 @@
-h1{
-    color: green;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --dark_color:#1b1f34;
+    --primary:#65B741;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
 }
 
-h1>p{
-    color: chocolate;
+header{
+    background-color: #1b1f24;
+    padding: 10px 20px 30px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+ul li{
+    margin-right: 20px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: var(--primary);
+}
+
+header button{
+    padding:10px 20px ;
+    font-weight: 500;
+    background-color: var(--dark_color);
+    border:1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 10px;
+}
+
+header button:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 1px 1px 1px 1px var(--primary);
+}
+
+.logo{
+    font-weight: 600;
+    color: var(--primary);
+    font-size: xx-large;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
